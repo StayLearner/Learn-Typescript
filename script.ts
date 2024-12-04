@@ -320,3 +320,75 @@ class pendrive {
 
 let p1= new pendrive("sandisk");
 let p2= new pendrive("Hp")
+
+
+
+
+//Function
+
+function abcdef(a:string, b:number): void { }
+
+//anonymous function
+function () : void{
+
+}
+
+//arrow function
+
+const a1b2 = (): void => {
+    console.log("hey");
+    
+}
+
+
+//implicitly return type
+function abcdefgh(){
+    return "hey"
+}
+
+//explicitly return type
+
+function abcdefg(): string{
+   
+    return "hey"
+}
+
+
+/**
+ * The function "user" in TypeScript takes in a name and age as required parameters, and an optional
+ * gender parameter.
+ * @param {string} name - "harsh"
+ * @param {number} age - 2
+ * @param {string} [gender] - The `gender` parameter in the `user` function is an optional parameter,
+ * denoted by the `?` symbol after the parameter name. This means that it is not required to provide a
+ * value for the `gender` parameter when calling the `user` function. If a value is not provided
+ */
+
+//optional Parameters
+
+function user(name: string, age:number, gender?: string){
+
+}
+
+user("harsh", 2)
+
+
+
+//Default Parameters
+
+function abcd(name: string = "user"){
+    console.log(name);
+    
+}
+
+abcd();
+
+
+//Rest Parameters
+
+function names(...names: string[]){
+    console.log(names);
+    
+}
+
+names("okk", "uno", " kill")
